@@ -9,6 +9,9 @@
 
 Um projeto Docker especializado para PostgreSQL com extensões avançadas para otimização de consultas e gerenciamento de índices.
 
+> 🔍 **Código Fonte**: [GitHub](https://github.com/welton-dev/stackauth-db) | 
+> 🐳 **Docker Hub**: [weltondev/stackauth-db](https://hub.docker.com/r/weltondev/stackauth-db)
+
 ## 🚀 Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
