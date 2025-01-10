@@ -1,0 +1,13 @@
+# projeto stackauth-db
+ - o projeto stackauth-db tem como objetivo criar um banco de dados para o projeto stackauth usando um custom postgres.
+# Readme.md
+ - arquivos .md em ingles
+ - configuracoes de docker
+ - configuracoes de postgres
+ - configuracoes de docker-compose
+
+# docker-hub
+ - https://hub.docker.com/r/weltondev/stackauth-db
+
+# github
+ - https://github.com/welton-dev/stackauth-db

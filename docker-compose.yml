@@ -1,0 +1,21 @@
+version: "3"
+services:
+  db:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    hostname: stackauth-db
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: stackframe
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - db_data:/var/lib/postgresql/data
