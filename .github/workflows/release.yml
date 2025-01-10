@@ -3,7 +3,7 @@ name: Create Release
 on:
   push:
     tags:
-      - 'v*' # Irá executar quando uma tag começando com 'v' for enviada
+      - "v*.*.*" # Irá executar quando uma tag começando com 'v' for enviada
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Create Release
         uses: softprops/action-gh-release@v1

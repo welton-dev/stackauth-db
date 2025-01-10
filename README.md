@@ -14,7 +14,7 @@ Um projeto Docker especializado para PostgreSQL com extensões avançadas para o
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - PostgreSQL 15
-- Docker
+- Docker (Multi-arquitetura: AMD64, ARM64)
 - Docker Compose
 - GitHub Actions para CI/CD
 - Extensões PostgreSQL:
