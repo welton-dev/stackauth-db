@@ -27,6 +27,9 @@ RUN git clone --depth 1 https://github.com/supabase/index_advisor.git && \
 # Imagem final
 FROM postgres:15
 
+# Expor a porta padrão do PostgreSQL
+EXPOSE 5432
+
 # Copiar arquivos compilados da imagem builder
 COPY --from=builder /usr/lib/postgresql/15/lib/ /usr/lib/postgresql/15/lib/
 COPY --from=builder /usr/share/postgresql/15/extension/ /usr/share/postgresql/15/extension/
